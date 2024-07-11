@@ -53,3 +53,40 @@ body {
   margin-left: 100px;
   margin-top: 100px;
 }
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(5px, -5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+/* Style for the preloader */
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #111111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Style for the typewriter text */
+#typewriter {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: none;
+  color: white;
+}
+
+/* Hide the main content initially */
+#main-content {
+  display: none;
+}
