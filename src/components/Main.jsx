@@ -1,5 +1,6 @@
 // Filename - Main.jsx
 import React from "react";
+import Navbar from "./Navbar"
 import { Link } from "react-router-dom";
 
 export default function Main(props) {
@@ -37,9 +38,10 @@ export default function Main(props) {
     ));
 
 	makeElementsFloat('.main--image');
-
+	
     return (
         <div className="main">
+			<Navbar />
             {objElements}
         </div>
     );

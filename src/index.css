@@ -1,8 +1,52 @@
+@font-face {
+  font-family: "Baskervville";
+  src: url("./fonts/Baskervville/Baskervville-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Baskervville";
+  src: url("./fonts/Baskervville/Baskervville-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Birdie";
+  src: url("./fonts/birdie-font-1720687540-0/Birdie.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mailart Rubberstamp";
+  src: url("./fonts/Mailart Rubberstamp/MailartRubberstamp-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   /* background-color: white; */
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: transparent;
+  color: white;
+}
+.navbar--title {
+  padding-left: 24px;
+}
+.navbar--items {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  padding-right: 16px;
 }
 .home{
     display: flex;
@@ -11,7 +55,23 @@ body {
     justify-content: center;
     align-items: center;
     /* border: solid; */
-    background-color: black;
+    background-image: radial-gradient(circle, rgba(0,0,0,0), rgba(0,0,0,0.8)), url("./images/packing.png");
+    background-size:cover;
+}
+.home--link {
+  text-decoration: none;
+}
+.home--button {
+  width: 586px;
+  height: 61px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  font-family: 'Baskervville';
 }
 .home--question {
     color: white;
@@ -29,13 +89,12 @@ body {
   margin: 0;
   height: 100vh;
   width: 100vw;
-  background-color:bisque;
+  background-color:black;
   
 }
 .main--image {
-  max-width: 200px;
-  max-height: 200px;
-  scale: 1.2;
+  max-width: 150px;
+  max-height: 150px;
 }
 .main--button {
   background-color: transparent;

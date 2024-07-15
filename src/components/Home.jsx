@@ -1,9 +1,7 @@
 // Filename - Home.jsx
 import React from "react";
-// Importing Link from react-router-dom to 
-// navigate to different end points.
+import Navbar from "./Navbar"
 import { Link } from "react-router-dom";
-import keyhole from "../images/keyhole.png"
 
 export default function Home() {
     // Typewriter effect
@@ -51,12 +49,16 @@ export default function Home() {
 
     return (
         <div className="home">
-            <h1 className="home--question">
+            <Navbar />
+            {/* <h2 className="home--question">
                 Insert question here
-            </h1>
-            <Link to="/Main">
-                <button className="button--keyhole">
+            </h2> */}
+            <Link to="/Main" className="home--link">
+                {/* <button className="button--keyhole">
                     <img src={keyhole} className="home--keyhole"/>
+                </button> */}
+                <button className="home--button">
+                    &lt; explore the treasure box &gt;
                 </button>
             </Link>
         </div>
