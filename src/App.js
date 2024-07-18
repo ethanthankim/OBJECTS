@@ -7,10 +7,11 @@ import {
 	BrowserRouter as Router,
 	Routes,
 	Route,
-	Navigate,
+	Navigate
 } from "react-router-dom";
 
 // import components
+import Preloader from "./components/Preloader";
 import Home from "./components/Home";
 import Main from "./components/Main";
 import Details from "./components/Details";
@@ -36,6 +37,10 @@ function App() {
 					<Route
 						exact
 						path="/"
+						element={<Preloader />}
+					/>
+					<Route
+						path="/Home"
 						element={<Home />}
 					/>
 

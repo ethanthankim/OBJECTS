@@ -29,6 +29,22 @@ body {
   padding: 0;
   /* background-color: white; */
 }
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #111111;
+  z-index: 9999;
+  font-family: 'Baskervville';
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: none;
+  color: white;
+}
 .navbar {
   position: absolute;
   top: 0;
