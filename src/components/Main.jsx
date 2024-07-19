@@ -41,7 +41,7 @@ export default function Main(props) {
 	
     return (
         <div className="main">
-			<Navbar />
+			<Navbar darkmode={true}/>
             {objElements}
         </div>
     );

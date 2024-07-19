@@ -16,6 +16,7 @@ import Home from "./components/Home";
 import Main from "./components/Main";
 import Details from "./components/Details";
 import mainObjects from "./main-objects";
+import About from "./components/About";
 
 function App() {
 	const [objects, setObjects] = React.useState(mainObjects)
@@ -51,6 +52,10 @@ function App() {
 					<Route
 						path="/Details"
 						element={<Details objects={objects}/>}
+					/>
+					<Route
+						path="/About"
+						element={<About />}
 					/>
 
 					{/* If any route mismatches the upper 

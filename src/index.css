@@ -1,3 +1,5 @@
+/* Fonts */
+
 @font-face {
   font-family: "Baskervville";
   src: url("./fonts/Baskervville/Baskervville-Regular.ttf");
@@ -22,14 +24,63 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Futura";
+  src: url("./fonts/futura-pt/FuturaCyrillicBook.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura";
+  src: url("./fonts/futura-pt/FuturaCyrillicBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura";
+  src: url("./fonts/futura-pt/FuturaCyrillicLight.ttf");
+  font-weight: lighter;
+  font-style: normal;
+}
 
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+.fade-in.visible {
+  opacity: 1;
+}
+.fade-out {
+  opacity:1;
+  transition: opacity 1s ease-out;
+}
+.fade-out.hidden {
+  opacity: 0;
+}
+.fade {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.fade.visible {
+  opacity: 1;
+}
+@keyframes toYellow {
+  to {color: black; background-color: yellow;}
+}
+@keyframes toTrans {
+  from {color: black; background-color: yellow;}
+  to {color: white; background-color: transparent;}
+}
+
+/* Style */
 html,
 body {
   margin: 0;
   padding: 0;
   /* background-color: white; */
 }
-.preloader {
+#preloader {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,6 +105,7 @@ body {
   width: 100%;
   background: transparent;
   color: white;
+  font-family: "Baskervville";
 }
 .navbar--title {
   padding-left: 24px;
@@ -64,7 +116,7 @@ body {
   gap: 20px;
   padding-right: 16px;
 }
-.home{
+#home{
     display: flex;
     height: 100vh;
     flex-direction: column;
@@ -74,8 +126,9 @@ body {
     background-image: radial-gradient(circle, rgba(0,0,0,0), rgba(0,0,0,0.8)), url("./images/packing.png");
     background-size:cover;
 }
-.home--link {
+.link {
   text-decoration: none;
+  color: inherit;
 }
 .home--button {
   width: 586px;
@@ -88,9 +141,23 @@ body {
   color: white;
   border: 1px solid white;
   font-family: 'Baskervville';
+  /* margin-top: 200px; */
 }
-.home--question {
-    color: white;
+#home--text {
+  font-family: "Baskervville";
+  font-size: 2.5rem;
+  width: 1248px;
+  height: 100px;
+  color: white;
+  margin-top: 100px;
+  text-align: center;
+}
+#home--title {
+  text-align: center;
+  font-family: "Baskervville";
+  font-size: 2rem;
+  margin-bottom: 50px;
+  line-height: 0;
 }
 .button--keyhole {
   background: transparent;
@@ -116,8 +183,11 @@ body {
   background-color: transparent;
   border: none;
 }
+.title {
+  font-family:"Mailart Rubberstamp" ;
+}
 .details {
-  margin-top: 0;
+  margin-top: 100px;
   padding-left: 150px;
   padding-right: 150px;
   display: flex;
@@ -125,8 +195,8 @@ body {
   justify-content: center;
   /* height: 100vh;
   width: 100vw; */
-  background-color:black;
-  color: white;
+  background-color:white;
+  color: black;
 }
 .details--image {
   max-width: 300px;
@@ -139,13 +209,49 @@ body {
 .quote--body {
   display: flex;
   gap: 50px;
+  font-family: "Baskervville";
+}
+.details--headings {
+  font-family: "Birdie";
+}
+.details--body {
+  display:flex;
+  gap: 50px;
 }
 .details--story {
   display: flex;
   flex-direction: column;
   max-width: 50%;
   justify-content: right;
+  font-family: "Futura";
 }
+.details--gallery {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  gap: 50px;
+}
+.details--illustration {
+  max-height: 500px;
+  max-width: fit-content;
+}
+.details--photo {
+  max-height: 500px;
+  max-width: fit-content;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  margin: 100px;
+}
+.about--text {
+  font-family: "Futura";
+}
+.about--team {
+  list-style-type: none;
+}
+
 @keyframes float {
   0% {
     transform: translate(0, 0);
@@ -156,30 +262,4 @@ body {
   100% {
     transform: translate(0, 0);
   }
-}
-/* Style for the preloader */
-#preloader {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: #111111;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-/* Style for the typewriter text */
-#typewriter {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 24px;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: none;
-  color: white;
-}
-
-/* Hide the main content initially */
-#main-content {
-  display: none;
 }

@@ -11,10 +11,13 @@ export default [
         label: "medal",
         url: "medal.png",
         owner: "Ka Wai",
+        author: "Crystal Chan",
         isSelected: false,
         story: "KaWai.txt",
         quote: "When I came to Canada in 2023, that was my goal at that time, and finally I got it in a year. It was very crazy. I am a very crazy person. I think this might not be easy to reach for normal people, but I got it even I was carrying cancer. I think this is what makes this medal more meaningful.",
-        audio: "KaWaiQuote.mp3"
+        audio: "KaWaiQuote.mp3",
+        illustration: "KaWai.png",
+        photos: "KaWai"
     },
     {
         id: 3,

@@ -1,5 +1,6 @@
 // Filename - Details.jsx
 import React, { useEffect, useState, useRef, useReducer } from "react"
+import Navbar from "./Navbar"
 
 export default function Details(props) {
     function findSelected(objArray) {
@@ -20,7 +21,7 @@ export default function Details(props) {
         .then((data) => setFileContent(data))
         .catch((error) => console.error('Error fetching file:', error));
     }, []);
-
+    
     const paragraphs = fileContent.split("\n").map(para =>{
         return (<p className="story--paragraph">{para}</p>)
     })
@@ -41,25 +42,45 @@ export default function Details(props) {
     };
 
     return (
-        <div className="details">
-            <img 
-                className="details--image"
-                src={require(`../images/${selected.url}`)} 
-                alt={selected.label} 
-            />
-            <section className="details--quote">
-                <h2 className="details--headings">Quotes and Highlights</h2>
-                <div className="quote--body">
-                    <button className="audio--button" onClick={togglePlay}>
-                        <img src={require("../images/play.png")} className="audio--image"></img>
-                    </button>
-                    <p>"{selected.quote}"</p>
-                </div>
-            </section>
-            <section className="details--story">
-                <h2 className="details--headings">About the {selected.label}</h2>
-                {paragraphs}
-            </section>
+        <div>
+            <Navbar darkmode={false}/>
+            <div className="details">
+                <h1 className="title">{selected.owner}'s {selected.label}</h1>
+                <img 
+                    className="details--image"
+                    src={require(`../images/${selected.url}`)} 
+                    alt={selected.label} 
+                    />
+                <section className="details--quote">
+                    <h2 className="details--headings">Quotes and Highlights</h2>
+                    <div className="quote--body">
+                        <button className="audio--button" onClick={togglePlay}>
+                            <img src={require("../images/play.png")} className="audio--image"></img>
+                        </button>
+                        <p>"{selected.quote}"</p>
+                    </div>
+                </section>
+                <section className="details--body">
+                    <div className="details--story">
+                        <h2 className="details--headings">About the {selected.label}</h2>
+                        {paragraphs}
+                    </div>
+                    <div className="details--gallery">
+                        <img 
+                            className="details--illustration"
+                            src={require(`../illustrations/${selected.illustration}`)} 
+                        />
+                        <img
+                            className="details--photo"
+                            src={require(`../photos/${selected.photos}/${selected.photos}1.jpg`)}
+                        />
+                        <img
+                            className="details--photo"
+                            src={require(`../photos/${selected.photos}/${selected.photos}2.jpg`)}
+                        />
+                    </div>
+                </section>
+            </div>
         </div>
     )
 }

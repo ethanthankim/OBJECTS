@@ -7,10 +7,11 @@ function Preloader() {
   const [typewriterText, setTypewriterText] = useState("");
   const indexRef = useRef(0);
   const typingDone = useRef(false);
-
+  const [fadeOut, setFadeOut] = useState(false);
+  
   useEffect(() => {
     const typeWriter = () => {
-      if (indexRef.current < message.length) {
+      if (indexRef.current < message.length-1) {
         console.log("Typing: ", message[indexRef.current]);
         setTypewriterText(prevText => prevText + message[indexRef.current]);
         indexRef.current += 1;
@@ -32,6 +33,7 @@ function Preloader() {
       } else {
         clearInterval(deletingIntervalId);
         // Navigate to home after the text is fully deleted
+        setFadeOut(true);
         setTimeout(() => {
           navigate('/home');
         }, 500); // Adjust the delay after deleting completes
@@ -45,10 +47,10 @@ function Preloader() {
       clearInterval(typingIntervalId);
       clearInterval(deletingIntervalId);
     };
-  }, []);
+  }, [message, navigate]);
 
   return (
-    <div className="preloader">
+    <div id="preloader" className={`fade-out ${fadeOut ? 'hidden' : ''}`}>
       <h1>{typewriterText}</h1>
       {/* You can add more styling or a spinner here */}
     </div>
