@@ -1,6 +1,7 @@
 // Filename - Details.jsx
 import React, { useEffect, useState, useRef, useReducer } from "react"
 import Navbar from "./Navbar"
+import Layout from "./layouts/Layout"
 
 export default function Details(props) {
     function findSelected(objArray) {
@@ -45,41 +46,31 @@ export default function Details(props) {
         <div>
             <Navbar darkmode={false}/>
             <div className="details">
-                <h1 className="title">{selected.owner}'s {selected.label}</h1>
                 <img 
                     className="details--image"
                     src={require(`../images/${selected.url}`)} 
                     alt={selected.label} 
-                    />
+                />
+                <button className="audio--button" onClick={togglePlay}>
+                    <img src={require("../images/play.png")} className="audio--image"></img>
+                    play audio
+                </button>
                 <section className="details--quote">
                     <h2 className="details--headings">Quotes and Highlights</h2>
                     <div className="quote--body">
-                        <button className="audio--button" onClick={togglePlay}>
-                            <img src={require("../images/play.png")} className="audio--image"></img>
-                        </button>
+                        <img src={require("../images/quote.png")} className="quote--mark" />
                         <p>"{selected.quote}"</p>
                     </div>
                 </section>
-                <section className="details--body">
-                    <div className="details--story">
-                        <h2 className="details--headings">About the {selected.label}</h2>
-                        {paragraphs}
-                    </div>
-                    <div className="details--gallery">
-                        <img 
-                            className="details--illustration"
-                            src={require(`../illustrations/${selected.illustration}`)} 
-                        />
-                        <img
-                            className="details--photo"
-                            src={require(`../photos/${selected.photos}/${selected.photos}1.jpg`)}
-                        />
-                        <img
-                            className="details--photo"
-                            src={require(`../photos/${selected.photos}/${selected.photos}2.jpg`)}
-                        />
-                    </div>
-                </section>
+                <h2 className="details--headings">{selected.title}</h2>
+                <Layout owner={selected.owner} story={paragraphs} />
+                {/* <KaWai story={paragraphs} /> */}
+                <p className="details--author">by {selected.author}</p>
+                <br/>
+                <img 
+                    className="details--illustration"
+                    src={require(`../illustrations/${selected.illustration}`)} 
+                />
             </div>
         </div>
     )

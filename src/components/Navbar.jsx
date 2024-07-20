@@ -11,7 +11,7 @@ export default function Navbar(props) {
             style={textStyle}
         >
             <Link to="/Home" className="link">
-                <h1 className="navbar--title">natsukashii</h1>
+                <h1 className="navbar--title">natsukashii.</h1>
             </Link>
             <ul className="navbar--items">
                 <Link to="/About" className="link">

@@ -66,10 +66,10 @@
   opacity: 1;
 }
 @keyframes toYellow {
-  to {color: black; background-color: yellow;}
+  to {color: black; background-color: #ffe100;}
 }
 @keyframes toTrans {
-  from {color: black; background-color: yellow;}
+  from {color: black; background-color: #ffe100;}
   to {color: white; background-color: transparent;}
 }
 
@@ -199,8 +199,29 @@ body {
   color: black;
 }
 .details--image {
-  max-width: 300px;
+  max-width: 500px;
   align-self: center;
+  margin-bottom: 50px;
+}
+.audio--button {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  align-self: center;
+  font-family: "Baskervville";
+  font-style: italic;
+  background-color: #D1EBD5;
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+}
+.audio--button:hover {background-color: #b4d1b8}
+.audio--button:active {
+  background-color: #b4d1b8;
+  transform: translateY(2px);
 }
 .audio--image {
   max-width: 100%;
@@ -208,36 +229,55 @@ body {
 }
 .quote--body {
   display: flex;
-  gap: 50px;
+  flex-direction: column;
   font-family: "Baskervville";
+  border-left: solid black;
+  border-width: 1px;
+  padding-left: 30px;
+}
+.quote--mark {
+  width: 30px;
 }
 .details--headings {
-  font-family: "Birdie";
+  font-family: "Mailart Rubberstamp";
+  font-size: 2rem;
 }
-.details--body {
+.section {
   display:flex;
   gap: 50px;
 }
-.details--story {
+.section--text {
   display: flex;
   flex-direction: column;
-  max-width: 50%;
-  justify-content: right;
+  max-width: 60%;
   font-family: "Futura";
 }
-.details--gallery {
+.section--fulltext {
   display: flex;
   flex-direction: column;
-  max-width: 50%;
+  width: 100%;
+  font-family: "Futura";
+}
+.section--gallery {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
   gap: 50px;
+  padding-top: 20px;
+}
+.section--photo {
+  max-height: 500px;
+  max-width: fit-content;
+}
+.details--author {
+  font-family: "Futura";
+  font-style: italic;
+  text-align: right;
 }
 .details--illustration {
   max-height: 500px;
   max-width: fit-content;
-}
-.details--photo {
-  max-height: 500px;
-  max-width: fit-content;
+  align-self: center;
 }
 
 .about {

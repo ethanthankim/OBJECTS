@@ -10,7 +10,7 @@ export default function Home() {
     const sentences = [
         "Every time we travel somewhere else, we think about what items are most important when we pack.",
         "What items are most important to you?",
-        "In exporing this question, we interviewed people about their most valuable object to learn more about the people around us."
+        "In exploring this question, we interviewed people about their most valuable object to learn more about the people around us."
     ]
     const [index, setIndex] = useState(0);
     const [text, setText] = useState("");
@@ -56,7 +56,7 @@ export default function Home() {
                     setTitleColor("white")
                     setTitleVis(true)
                 }
-            }, 4000)
+            }, 6000)
             return () => {
                 clearTimeout(fadeOutTimer);
                 clearTimeout(displayTimer);
