@@ -176,8 +176,8 @@ body {
   
 }
 .main--image {
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 200px;
+  max-height: 200px;
 }
 .main--button {
   background-color: transparent;
@@ -284,8 +284,6 @@ body {
   display: flex;
   flex-direction: column;
   margin: 100px;
-}
-.about--text {
   font-family: "Futura";
 }
 .about--team {
