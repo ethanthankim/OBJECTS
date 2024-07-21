@@ -12,7 +12,6 @@ function Preloader() {
   useEffect(() => {
     const typeWriter = () => {
       if (indexRef.current < message.length-1) {
-        console.log("Typing: ", message[indexRef.current]);
         setTypewriterText(prevText => prevText + message[indexRef.current]);
         indexRef.current += 1;
       } else {

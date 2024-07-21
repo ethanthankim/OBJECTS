@@ -17,7 +17,7 @@ export default function Details(props) {
     const [fileContent, setFileContent] = useState('');
 
     useEffect(() => {
-        fetch(`/stories/${selected.story}`)
+        fetch(`${process.env.PUBLIC_URL}/stories/${selected.story}`)
         .then((response) => response.text())
         .then((data) => setFileContent(data))
         .catch((error) => console.error('Error fetching file:', error));
