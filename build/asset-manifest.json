@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.45f549b2.chunk.css",
-    "main.js": "/static/js/main.c2dd3e21.chunk.js",
-    "main.js.map": "/static/js/main.c2dd3e21.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.ebf801e5.js",
-    "runtime~main.js.map": "/static/js/runtime~main.ebf801e5.js.map",
-    "static/js/2.ff3d6294.chunk.js": "/static/js/2.ff3d6294.chunk.js",
-    "static/js/2.ff3d6294.chunk.js.map": "/static/js/2.ff3d6294.chunk.js.map",
-    "static/js/3.d3e4d6ea.chunk.js": "/static/js/3.d3e4d6ea.chunk.js",
-    "static/js/3.d3e4d6ea.chunk.js.map": "/static/js/3.d3e4d6ea.chunk.js.map",
+    "main.css": "/static/css/main.9d7afe37.chunk.css",
+    "main.js": "/static/js/main.abe08c07.chunk.js",
+    "main.js.map": "/static/js/main.abe08c07.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3870d21c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3870d21c.js.map",
+    "static/js/2.e9d04499.chunk.js": "/static/js/2.e9d04499.chunk.js",
+    "static/js/2.e9d04499.chunk.js.map": "/static/js/2.e9d04499.chunk.js.map",
+    "static/js/3.d9e24ba7.chunk.js": "/static/js/3.d9e24ba7.chunk.js",
+    "static/js/3.d9e24ba7.chunk.js.map": "/static/js/3.d9e24ba7.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d5f90198ac0493470614c2a2c39ca932.js": "/precache-manifest.d5f90198ac0493470614c2a2c39ca932.js",
+    "precache-manifest.590c083235e35b617613741e2e4e335a.js": "/precache-manifest.590c083235e35b617613741e2e4e335a.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.45f549b2.chunk.css.map": "/static/css/main.45f549b2.chunk.css.map",
+    "static/css/main.9d7afe37.chunk.css.map": "/static/css/main.9d7afe37.chunk.css.map",
+    "static/js/2.e9d04499.chunk.js.LICENSE.txt": "/static/js/2.e9d04499.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/MailartRubberstamp-Regular.0c03201a.otf",
     "static/media/Dione.png": "/static/media/Dione.a19272e7.png",
     "static/media/Dione1.png": "/static/media/Dione1.6daf39d4.png",
@@ -35,5 +36,11 @@
     "static/media/packing.png": "/static/media/packing.297b7ec2.png",
     "static/media/sewing.png": "/static/media/sewing.80909b58.png",
     "static/media/watch.png": "/static/media/watch.8b5e5a59.png"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3870d21c.js",
+    "static/js/2.e9d04499.chunk.js",
+    "static/css/main.9d7afe37.chunk.css",
+    "static/js/main.abe08c07.chunk.js"
+  ]
 }
