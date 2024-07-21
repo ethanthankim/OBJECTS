@@ -17,11 +17,13 @@ export default function Details(props) {
     const [fileContent, setFileContent] = useState('');
 
     useEffect(() => {
-        fetch(`/stories/${selected.story}`)
+        fetch(`public/stories/${selected.story}`)
         .then((response) => response.text())
         .then((data) => setFileContent(data))
         .catch((error) => console.error('Error fetching file:', error));
     }, []);
+
+    console.log(fileContent)
     
     const paragraphs = fileContent.split("\n").map(para =>{
         return (<p className="story--paragraph">{para}</p>)
@@ -64,7 +66,6 @@ export default function Details(props) {
                 </section>
                 <h2 className="details--headings">{selected.title}</h2>
                 <Layout owner={selected.owner} story={paragraphs} />
-                {/* <KaWai story={paragraphs} /> */}
                 <p className="details--author">by {selected.author}</p>
                 <br/>
                 <img 
