@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/OBJECTS/static/css/main.a3664eeb.chunk.css",
-    "main.js": "/OBJECTS/static/js/main.42ce50fe.chunk.js",
-    "main.js.map": "/OBJECTS/static/js/main.42ce50fe.chunk.js.map",
-    "runtime-main.js": "/OBJECTS/static/js/runtime-main.90ac6da4.js",
-    "runtime-main.js.map": "/OBJECTS/static/js/runtime-main.90ac6da4.js.map",
-    "static/js/2.e9d04499.chunk.js": "/OBJECTS/static/js/2.e9d04499.chunk.js",
-    "static/js/2.e9d04499.chunk.js.map": "/OBJECTS/static/js/2.e9d04499.chunk.js.map",
-    "static/js/3.a467b594.chunk.js": "/OBJECTS/static/js/3.a467b594.chunk.js",
-    "static/js/3.a467b594.chunk.js.map": "/OBJECTS/static/js/3.a467b594.chunk.js.map",
+    "main.css": "/OBJECTS/static/css/main.481902c3.chunk.css",
+    "main.js": "/OBJECTS/static/js/main.98ed608a.chunk.js",
+    "main.js.map": "/OBJECTS/static/js/main.98ed608a.chunk.js.map",
+    "runtime-main.js": "/OBJECTS/static/js/runtime-main.689dc4ce.js",
+    "runtime-main.js.map": "/OBJECTS/static/js/runtime-main.689dc4ce.js.map",
+    "static/js/2.65473c3f.chunk.js": "/OBJECTS/static/js/2.65473c3f.chunk.js",
+    "static/js/2.65473c3f.chunk.js.map": "/OBJECTS/static/js/2.65473c3f.chunk.js.map",
+    "static/js/3.0321b0de.chunk.js": "/OBJECTS/static/js/3.0321b0de.chunk.js",
+    "static/js/3.0321b0de.chunk.js.map": "/OBJECTS/static/js/3.0321b0de.chunk.js.map",
     "index.html": "/OBJECTS/index.html",
-    "precache-manifest.7114199837ee25b4359d26a6cbdd055f.js": "/OBJECTS/precache-manifest.7114199837ee25b4359d26a6cbdd055f.js",
+    "precache-manifest.83e121f30859879b029b78913d22812b.js": "/OBJECTS/precache-manifest.83e121f30859879b029b78913d22812b.js",
     "service-worker.js": "/OBJECTS/service-worker.js",
-    "static/css/main.a3664eeb.chunk.css.map": "/OBJECTS/static/css/main.a3664eeb.chunk.css.map",
-    "static/js/2.e9d04499.chunk.js.LICENSE.txt": "/OBJECTS/static/js/2.e9d04499.chunk.js.LICENSE.txt",
+    "static/css/main.481902c3.chunk.css.map": "/OBJECTS/static/css/main.481902c3.chunk.css.map",
+    "static/js/2.65473c3f.chunk.js.LICENSE.txt": "/OBJECTS/static/js/2.65473c3f.chunk.js.LICENSE.txt",
     "static/media/index.css": "/OBJECTS/static/media/MailartRubberstamp-Regular.0c03201a.otf",
     "static/media/Dione.png": "/OBJECTS/static/media/Dione.a19272e7.png",
     "static/media/Dione1.png": "/OBJECTS/static/media/Dione1.6daf39d4.png",
@@ -43,9 +43,9 @@
     "static/media/watch.png": "/OBJECTS/static/media/watch.e81f4288.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.90ac6da4.js",
-    "static/js/2.e9d04499.chunk.js",
-    "static/css/main.a3664eeb.chunk.css",
-    "static/js/main.42ce50fe.chunk.js"
+    "static/js/runtime-main.689dc4ce.js",
+    "static/js/2.65473c3f.chunk.js",
+    "static/css/main.481902c3.chunk.css",
+    "static/js/main.98ed608a.chunk.js"
   ]
 }
