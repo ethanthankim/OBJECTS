@@ -21,7 +21,8 @@ export default function About() {
                         <li>Writing & Editing - Crystal Chan, Maha Toeima</li>
                         <li>Photography - Crystal Chan</li>
                         <li>Illustration - Julie Wu</li>
-                        <li>UI/UX Design - Evelyn Warsito, Jon Kuijs, Sam Dias</li>
+                        <li>UI/UX Design - Evelyn Warsito, Jon Kuijs</li>
+                        <li>Branding - Sam Dias</li>
                         <li>Web Development - Ethan Kim</li>
                     </ul>
                 </div>

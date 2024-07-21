@@ -46,7 +46,7 @@ export default [
         isSelected: false,
         author: "Maha Toeima",
         story: "Jon.txt",
-        illustration: "Jon.jpeg",
+        illustration: "Jon.png",
         title: "Golden Pocket Watch"
     },
     {
@@ -68,7 +68,7 @@ export default [
         isSelected: false,
         author: "Maha Toeima",
         story: "Mariam.txt",
-        illustration: "Hayam.png",
+        illustration: "Mariam.png",
         title: "The Box That Kept Following Me"
     }
 ]
