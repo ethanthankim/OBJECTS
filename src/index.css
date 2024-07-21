@@ -226,7 +226,8 @@ body {
   transform: translateY(2px);
 }
 .audio--image {
-  max-width: 100%;
+  width:25px;
+  height: 25px;
   object-fit: contain;
 }
 .quote--body {
