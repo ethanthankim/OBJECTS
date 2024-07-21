@@ -146,11 +146,13 @@ body {
 #home--text {
   font-family: "Baskervville";
   font-size: 2.5rem;
-  width: 1248px;
+  width: fit-content;
   height: 100px;
   color: white;
   margin-top: 100px;
   text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 #home--title {
   text-align: center;
