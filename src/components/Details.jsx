@@ -30,7 +30,7 @@ export default function Details(props) {
     })
     
     const [isPlaying, setIsPlaying] = useState(false);
-    const audioFile = `/audio/${selected.audio}`;
+    const audioFile = `${process.env.PUBLIC_URL}/audio/${selected.audio}`;
     const audioRef = useRef(new Audio(audioFile))
 
     const togglePlay = () => {
