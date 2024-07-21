@@ -53,10 +53,14 @@ export default function Details(props) {
                     src={require(`../images/${selected.url}`)} 
                     alt={selected.label} 
                 />
+                {/* Conditionally render audio button and quote section if they exist */}
+                { selected.audio &&
                 <button className="audio--button" onClick={togglePlay}>
                     <img src={require("../images/play.png")} className="audio--image"></img>
                     play audio
                 </button>
+                }
+                {selected.quote &&
                 <section className="details--quote">
                     <h2 className="details--headings">Quotes and Highlights</h2>
                     <div className="quote--body">
@@ -64,6 +68,7 @@ export default function Details(props) {
                         <p>"{selected.quote}"</p>
                     </div>
                 </section>
+                }
                 <h2 className="details--headings">{selected.title}</h2>
                 <Layout owner={selected.owner} story={paragraphs} />
                 <p className="details--author">by {selected.author}</p>

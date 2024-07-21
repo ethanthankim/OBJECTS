@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6fb0cb06c3dc443a3190cf78d8e7326d",
+    "revision": "727d37d3ab8494fafc1ef55ebd860a03",
     "url": "/OBJECTS/index.html"
   },
   {
-    "revision": "cfab941514a56b014dba",
-    "url": "/OBJECTS/static/css/main.b5bbc3cc.chunk.css"
+    "revision": "a146e94a36cfe09e6134",
+    "url": "/OBJECTS/static/css/main.a3664eeb.chunk.css"
   },
   {
     "revision": "8f1ca99251576549a687",
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/OBJECTS/static/js/2.e9d04499.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9709f8c58a30b68034ad",
-    "url": "/OBJECTS/static/js/3.d9e24ba7.chunk.js"
+    "revision": "2d6e0809c71a7477d4e6",
+    "url": "/OBJECTS/static/js/3.a467b594.chunk.js"
   },
   {
-    "revision": "cfab941514a56b014dba",
-    "url": "/OBJECTS/static/js/main.6dacf541.chunk.js"
+    "revision": "a146e94a36cfe09e6134",
+    "url": "/OBJECTS/static/js/main.42ce50fe.chunk.js"
   },
   {
-    "revision": "557c9a22cdeef5c08b93",
-    "url": "/OBJECTS/static/js/runtime-main.27e7bf0a.js"
+    "revision": "1d82839bc69683165a2b",
+    "url": "/OBJECTS/static/js/runtime-main.90ac6da4.js"
   },
   {
     "revision": "1c35c17b8173d3f0476b987c4267a524",
@@ -72,6 +72,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/OBJECTS/static/media/FuturaCyrillicLight.1417bc65.ttf"
   },
   {
+    "revision": "61f735962837400c41aea08435fa77fd",
+    "url": "/OBJECTS/static/media/Hayam.61f73596.png"
+  },
+  {
     "revision": "893a0b0d3130e3b0499e0508f7452246",
     "url": "/OBJECTS/static/media/Jado.893a0b0d.png"
   },
@@ -82,6 +86,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "91fe28c38e65b4e2ce41d488fffc4020",
     "url": "/OBJECTS/static/media/Jado2.91fe28c3.png"
+  },
+  {
+    "revision": "5cd157865af218f7d72f01c506af32bc",
+    "url": "/OBJECTS/static/media/Jon.5cd15786.jpeg"
+  },
+  {
+    "revision": "5d04c8ea9c184223142e28a305bea397",
+    "url": "/OBJECTS/static/media/Jon1.5d04c8ea.png"
+  },
+  {
+    "revision": "0a52383f7e9f386fbea7f453d92b7f88",
+    "url": "/OBJECTS/static/media/Jon2.0a52383f.png"
+  },
+  {
+    "revision": "e89f63744033cd648526cc04d3469133",
+    "url": "/OBJECTS/static/media/Jon3.e89f6374.png"
   },
   {
     "revision": "3963dcfc8a5b41e76f791627ece755af",
@@ -136,7 +156,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/OBJECTS/static/media/sewing.80909b58.png"
   },
   {
-    "revision": "8b5e5a594c7e99854e2310671cc7e396",
-    "url": "/OBJECTS/static/media/watch.8b5e5a59.png"
+    "revision": "e81f4288c5950744b05e9381212737e1",
+    "url": "/OBJECTS/static/media/watch.e81f4288.png"
   }
 ]);
