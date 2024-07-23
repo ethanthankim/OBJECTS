@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ed5a0b021510826c1a486784a4ffbb80",
+    "revision": "a1b7c180a319beead34a597012501cc6",
     "url": "/OBJECTS/index.html"
   },
   {
-    "revision": "db3cb5c3a2848bc7bd30",
-    "url": "/OBJECTS/static/css/main.c2a101e9.chunk.css"
+    "revision": "dd7fd45727ee97a0e486",
+    "url": "/OBJECTS/static/css/main.fac3bb89.chunk.css"
   },
   {
     "revision": "3e9668648c0c736a0b3f",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/OBJECTS/static/js/3.544e0953.chunk.js"
   },
   {
-    "revision": "db3cb5c3a2848bc7bd30",
-    "url": "/OBJECTS/static/js/main.0d27e6b7.chunk.js"
+    "revision": "dd7fd45727ee97a0e486",
+    "url": "/OBJECTS/static/js/main.be3c88cb.chunk.js"
   },
   {
     "revision": "02ea077bb8eb7c66ff82",
@@ -156,8 +156,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/OBJECTS/static/media/elephant.6fac6cba.png"
   },
   {
-    "revision": "4918ee5191cc5f36bd9648aed398d580",
-    "url": "/OBJECTS/static/media/jewelry.4918ee51.png"
+    "revision": "39a4822213e5538c62131ced5703fedf",
+    "url": "/OBJECTS/static/media/jewelry.39a48222.png"
   },
   {
     "revision": "5ba02d4c07d93db38964a2c06547d9e8",
@@ -172,8 +172,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/OBJECTS/static/media/packing.297b7ec2.png"
   },
   {
-    "revision": "c4c464c4c97a3154373bb00258288ea3",
-    "url": "/OBJECTS/static/media/sewing.c4c464c4.png"
+    "revision": "12092472e5c26ccaeb0f6d1b7b9eca8b",
+    "url": "/OBJECTS/static/media/sewing.12092472.png"
   },
   {
     "revision": "e81f4288c5950744b05e9381212737e1",
